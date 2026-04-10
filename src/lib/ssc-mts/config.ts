@@ -1,0 +1,45 @@
+// SSC MTS Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM049",
+  slug: "ssc-mts",
+  name: "SSC MTS",
+  fullName: "SSC MTS",
+  alias: "SSC MTS",
+  family: "SSC",
+  category: "Government/civil service",
+  subcategory: "Government recruitment",
+  country: "India",
+  region: "South Asia",
+  languages: ["English","Hindi"],
+  estimatedAnnualTakers: "high applicants",
+  testingWindow: "Multiple",
+  schedulePattern: "Annual",
+  ageGroup: "18-27",
+  targetUser: "Government job seeker",
+  delivery: "Computer-based",
+  questionTypes: ["MCQ"],
+  adaptivity: "Linear",
+  sections: "Reasoning, math, GS, English",
+  scoringMode: "Cutoff",
+  essayOrSpeaking: "No",
+  ipRisk: "Low",
+  contentReuse: "general_studies_aptitude",
+  uiEngine: "timed_objective",
+  monetizationPotential: "Medium",
+  tier: "Tier 4",
+  launchWave: "Wave 6",
+  themeColor: "#0F766E",
+  themeColorDark: "#115E59",
+  localizationComplexity: "Medium",
+  offlineNeeded: false,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
